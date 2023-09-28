@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
-    <script src="/script.js" defer></script>
 </head>
 <body>
-    <div class="gameboard">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+    <div id="controls">
+        <input type="text" id="player1-name" placeholder="Player 1 Name" />
+        <input type="text" id="player2-name" placeholder="Player 2 Name" />
+        <button id="start-button">Start Game</button>
     </div>
+    <div id="game-container">
+        <div class="box" data-boxPlace="0"></div>
+        <div class="box" data-boxPlace="1"></div>
+        <div class="box" data-boxPlace="2"></div>
+        <div class="box" data-boxPlace="3"></div>
+        <div class="box" data-boxPlace="4"></div>
+        <div class="box" data-boxPlace="5"></div>
+        <div class="box" data-boxPlace="6"></div>
+        <div class="box" data-boxPlace="7"></div>
+        <div class="box" data-boxPlace="8"></div>
+    </div>
+    <div id="game-result"></div>
 </body>
 </html>
